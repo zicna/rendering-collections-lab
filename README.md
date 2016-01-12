@@ -1,16 +1,11 @@
 ## Objectives
 
-1. Objective 1
-2. Objective 2
+ 1. use the `collection` keyword with their partials
+ 2. use the just pass in the array of instances method
+ 3. Understand that the render method returns nil and do a `||`
 
 ## Instructions
 
-Make the tests pass.
-
-### Part 1: Do Some Stuff
-
-## Resources
-
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
-
-<a href='https://learn.co/lessons/rendering-collections-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
+ * Back to the store examples replace all the collection iteration stuff with proper collection partials
+ * Have an empty cart message.
+ * It'll be simple :)
