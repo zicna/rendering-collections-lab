@@ -1,5 +1,7 @@
 tags:
-  - tag1
+  - tag_1
+  - tag_2
 languages:
-  - language1
+  - language_1
+  - language_1
 resources: 0
