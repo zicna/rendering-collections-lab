@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "invoices_index_view" do
+RSpec.describe "orders_index_view" do
 
   before do
     products = ["tv", "vcr", "macbook", "macbook air", "mouse", "chair", "desk", "lamp", "water bottle"]
@@ -23,14 +23,14 @@ RSpec.describe "invoices_index_view" do
 
   end
 
-  it "renders the invoice partial" do
+  it "renders the order partial" do
     orders = Order.first
     assign(:orders, orders)
     render :template => "orders/index.html.erb"
     expect(rendered).to render_template(:partial => "orders/_order")
   end
 
-  it "renders the invoice partial using the abstract method of rendering collection" do
+  it "renders the order partial using the abstract method of rendering collection" do
     orders = Order.first
     assign(:orders, orders)
     expect_any_instance_of(Order).to receive(:to_partial_path).and_call_original
