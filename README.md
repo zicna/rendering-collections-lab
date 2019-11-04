@@ -14,7 +14,7 @@ Let's go back to our store domain.  We had an admin portion of the site where ad
 
 We've provided a seed file so you can have some data to play around with –– run `rake db:seed` to seed the database.
 
-1. Refactor the `invoices.html.erb` view to render a collection of partials.
-2. Refactor the `orders.html.erb` view to render a collection of partials.
+1. Refactor the `invoices/index.html.erb` view to render a collection of partials with `_invoice.html.erb`.
+2. Refactor the `orders/index.html.erb ` view to render a collection of partials with `_order.html.erb`.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/rendering-collections-lab' title='Rendering Collections Lab'>Rendering Collections Lab</a> on Learn.co and start learning to code for free.</p>
