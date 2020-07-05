@@ -16,6 +16,3 @@ We've provided a seed file so you can have some data to play around with –– 
 
 1. Refactor the `invoices/index.html.erb` view to render a collection of partials with `_invoice.html.erb`.
 2. Refactor the `orders/index.html.erb ` view to render a collection of partials with `_order.html.erb`.
-
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/rendering-collections-lab' title='Rendering Collections Lab'>Rendering Collections Lab</a> on Learn.co and start learning to code for free.</p>
