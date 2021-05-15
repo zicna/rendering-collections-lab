@@ -1,6 +1,4 @@
-<% if @orders.empty? %>
-  /No Orders/
-<% else %>
+
   <h2>Open Orders</h2>
   <table>
     <tr>
@@ -9,6 +7,5 @@
       <th>Price
       <th>Customer</th>  
     </tr>
-      <%= render partial: "orders/order", collection: @orders, as: :order %>
+      <%= render(@orders) || "No Orders" %>
   </table>
-<% end %>
