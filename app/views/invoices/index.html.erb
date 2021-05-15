@@ -4,10 +4,9 @@
     <th>Invoice Id
     <th>Customer</th>  
   </tr>
-  <% @invoices.each do |invoice| %>
-    <tr>
-      <th><%= invoice.id %></th>
-      <th><%= invoice.orders.first ? invoice.orders.first.customer.name : "No Orders" %></th>
-    </tr>
+  <% if @invoices.empty? %>
+    <p> No Invoices </p>
+  <% else %>
+      <%= render partial: 'invoices/invoice', collection: @invoices, as: :invoice %>
   <% end %>
 </table>

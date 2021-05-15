@@ -1,19 +1,14 @@
-<h2>Open Orders</h2>
-<table>
-  <tr>
-    <th>Order Id</th>
-    <th>Product
-    <th>Price
-    <th>Customer</th>  
-  </tr>
-  <% @orders.each do |order| %>
-    <% order.products.each do |product| %>
-      <tr>
-        <td><%= order.id %></td>
-        <td><%= product.name %></td>
-        <td><%= product.price %></td>
-        <td><%= order.customer.name %></td>
-      </tr>
-    <% end %>
-  <% end %>
-</table>
+<% if @orders.empty? %>
+  /No Orders/
+<% else %>
+  <h2>Open Orders</h2>
+  <table>
+    <tr>
+      <th>Order Id</th>
+      <th>Product
+      <th>Price
+      <th>Customer</th>  
+    </tr>
+      <%= render partial: "orders/order", collection: @orders, as: :order %>
+  </table>
+<% end %>
